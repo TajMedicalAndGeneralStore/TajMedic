@@ -752,3 +752,59 @@
     </a>
   </div>
 </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+  .contact-details {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* The magic styling for functional underlines */
+  .click-link {
+    text-decoration: underline;
+    text-underline-offset: 6px; /* Space between text and line */
+    text-decoration-thickness: 2px;
+    text-decoration-color: #25D366; /* Matching your WhatsApp Green */
+    color: #333;
+    font-weight: 600;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    width: fit-content;
+  }
+
+  /* Hover effect to make it feel interactive */
+  .click-link:hover {
+    color: #25D366;
+    text-decoration-color: #128C7E; /* Darker green on hover */
+    transform: translateX(5px);
+  }
+
+  i {
+    color: #555;
+    font-size: 18px;
+  }
+</style>
+
+<div class="contact-details">
+  
+  <a href="tel:+923437769660" class="click-link">
+    <i class="fas fa-phone-alt"></i> Contact: +92 343 7769660
+  </a>
+
+  <a href="mailto:yourname@example.com?subject=Inquiry" class="click-link">
+    <i class="fas fa-envelope"></i> Email: yourname@example.com
+  </a>
+
+  <a href="https://www.google.com/maps/search/?api=1&query=Your+Business+Address+Here" 
+     target="_blank" class="click-link">
+    <i class="fas fa-map-marker-alt"></i> Address: 123 Business St, City, Country
+  </a>
+
+</div>
