@@ -27,8 +27,8 @@
     }
     .menu-icon {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 15px;
+      right: 15px;
       font-size: 40px;
       cursor: pointer;
     }
@@ -178,9 +178,9 @@
     </section>
     <section id="contact">
       <h2>Contact Us</h2>
-      <p>Phone: 03437769660 , 03167328419</p>
-      <p>Email: mparvaiz.0099@gmail.com</p>
-      <p>Address: Chak No. 99 GB Nehang Badala, Jaranwala, Faisalabad</p>
+      <p>☎️: 03437769660 , 03167328419</p>
+      <p>✉️: tajmedicalstore99@gmail.com</p>
+      <p>📍: Chak No. 99 GB Nehang Badala, Jaranwala, Faisalabad</p>
       <iframe src="https://maps.google.com/maps?q=chak%20no.%2099%20gb%20nehang%20badala&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0"></iframe>
     </section>
     <section id="login">
@@ -258,7 +258,7 @@
     document.getElementById("loginButton").addEventListener("click", function () {
       const username = document.getElementById("username").value.trim();
       const password = document.getElementById("password").value;
-      if (username === 'Taj medical and general store' && password === 'tajmedicalstore.00') {
+      if (username === 'TMAGC.786' && password === 'tajmedicalstore.00') {
         document.getElementById('add-item-form').style.display = 'block';
         showSection('add-item-form');
         displayManageItems();
@@ -684,16 +684,71 @@
     loadItems();  // 🔧 Load on startup
   };
 </script>
-<a href="https://wa.me/923437769660" target="_blank" style="text-decoration:none;">
-  <button style="background-color:#25D366; color:white; padding:10px 20px; border:none; border-radius:5px; font-size:16px; cursor:pointer;">
-    Chat with us on WhatsApp
-  </button>
-</a>
-<a href="https://www.facebook.com/m.parvaiz.10690" target="_blank">Connect with us on Facebook</a>
-<!-- Add Font Awesome in your HTML <head> if not already included -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Facebook icon with link -->
-<a href="https://www.facebook.com/m.parvaiz.10690" target="_blank">
-  <i class="fab fa-facebook fa-2x"></i>
-</a>
+<style>
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+  }
+
+  .social-icons a {
+    color: #555;
+    transition: transform 0.3s, color 0.3s;
+    text-decoration: none;
+  }
+
+  /* Hover Effects */
+  .social-icons a:hover { transform: scale(1.2); }
+  .fa-whatsapp:hover { color: #25D366; }
+  .fa-facebook:hover { color: #1877F2; }
+  .fa-instagram:hover { color: #E4405F; }
+  .fa-x-twitter:hover { color: #000000; }
+
+  .wa-button {
+    background-color: #25D366;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px; /* Rounded pill style */
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+</style>
+
+<div class="contact-container">
+  <a href="https://wa.me/923437769660?text=Hello! I would like to inquire about your services." 
+     target="_blank" class="wa-button">
+    <i class="fab fa-whatsapp"></i> Chat with us on WhatsApp
+  </a>
+
+  <div class="social-icons">
+    <a href="https://www.facebook.com/m.parvaiz.10690" target="_blank" title="Facebook">
+      <i class="fab fa-facebook fa-2x"></i>
+    </a>
+    
+    <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank" title="Instagram">
+      <i class="fab fa-instagram fa-2x"></i>
+    </a>
+
+    <a href="https://twitter.com/YOUR_USERNAME" target="_blank" title="X (Twitter)">
+      <i class="fab fa-x-twitter fa-2x"></i>
+    </a>
+  </div>
+</div>
