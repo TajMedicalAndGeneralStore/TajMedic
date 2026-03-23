@@ -175,14 +175,57 @@
         <li>Over-the-counter medicine</li>
         <li>Health supplements and wellness products</li>
       </ul>
-    </section>
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>☎️: <u>03437769660</u> , <u>03167328419</u></p>
-      <p>✉️: <u>tajmedicalstore99@gmail.com</u></p>
-      <p>📍: <u>Chak No. 99 GB Nehang Badala, Jaranwala, Faisalabad</u></p>
-      <iframe src="https://maps.google.com/maps?q=chak%20no.%2099%20gb%20nehang%20badala&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0"></iframe>
-    </section>
+    <style>
+  #contact u {
+    text-underline-offset: 4px; /* Space between text and line */
+    text-decoration-thickness: 1px;
+    transition: color 0.3s, text-decoration-color 0.3s;
+  }
+
+  #contact a {
+    text-decoration: none; /* Removes default blue link color */
+    color: inherit; /* Keeps your text black/default */
+  }
+
+  #contact a:hover u {
+    color: #25D366; /* Changes to WhatsApp green on hover */
+    text-decoration-color: #25D366;
+  }
+  
+  #contact p {
+    margin: 15px 0;
+    font-size: 1.1rem;
+  }
+</style>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  
+  <p>
+    ☎️: 
+    <a href="tel:+923437769660"><u>03437769660</u></a>, 
+    <a href="tel:+923167328419"><u>03167328419</u></a>
+  </p>
+
+  <p>
+    ✉️: 
+    <a href="mailto:tajmedicalstore99@gmail.com?subject=Inquiry from Website">
+      <u>tajmedicalstore99@gmail.com</u>
+    </a>
+  </p>
+
+  <p>
+    📍: 
+    <a href="https://www.google.com/maps/search/?api=1&query=Taj+Medical+Store+Chak+No.+99+GB+Nehang+Badala+Jaranwala+Faisalabad" target="_blank">
+      <u>Chak No. 99 GB Nehang Badala, Jaranwala, Faisalabad</u>
+    </a>
+  </p>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.123456789!2d73.4!3d31.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzHCsDE4JzAwLjAiTiA3M8KwMjQnMDAuMCJF!5e0!3m2!1sen!2spk!4v1710000000000!5m2!1sen!2spk" 
+          width="100%" height="300" style="border:0; border-radius: 8px; margin-top: 10px;" allowfullscreen="" loading="lazy">
+  </iframe>
+</section>
+
     <section id="login">
       <h2>Login</h2>
       <div class="centered-login">
@@ -751,60 +794,3 @@
       <i class="fab fa-x-twitter fa-2x"></i>
     </a>
   </div>
-</div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-<style>
-  .contact-details {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  /* The magic styling for functional underlines */
-  .click-link {
-    text-decoration: underline;
-    text-underline-offset: 6px; /* Space between text and line */
-    text-decoration-thickness: 2px;
-    text-decoration-color: #25D366; /* Matching your WhatsApp Green */
-    color: #333;
-    font-weight: 600;
-    font-size: 17px;
-    transition: all 0.3s ease;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    width: fit-content;
-  }
-
-  /* Hover effect to make it feel interactive */
-  .click-link:hover {
-    color: #25D366;
-    text-decoration-color: #128C7E; /* Darker green on hover */
-    transform: translateX(5px);
-  }
-
-  i {
-    color: #555;
-    font-size: 18px;
-  }
-</style>
-
-<div class="contact-details">
-  
-  <a href="tel:+923437769660" class="click-link">
-    <i class="fas fa-phone-alt"></i> Contact: +92 343 7769660
-  </a>
-
-  <a href="mailto:yourname@example.com?subject=Inquiry" class="click-link">
-    <i class="fas fa-envelope"></i> Email: yourname@example.com
-  </a>
-
-  <a href="https://www.google.com/maps/search/?api=1&query=Your+Business+Address+Here" 
-     target="_blank" class="click-link">
-    <i class="fas fa-map-marker-alt"></i> Address: 123 Business St, City, Country
-  </a>
-
-</div>
